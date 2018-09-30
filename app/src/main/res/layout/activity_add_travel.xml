@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.personaldiary.AddTravel">
+
+
+    <ImageButton
+        android:id="@+id/ImageSelect"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_add_a_photo_white_24dp" />
+
+    <Button
+        android:id="@+id/newAddTravel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="NEW TRAVEL PLAN"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="262dp"
+        android:layout_below="@+id/newTravelPlan"
+        android:layout_alignStart="@+id/ImageSelect" />
+
+    <EditText
+        android:id="@+id/newTravelPlan"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageSelect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:hint="add your travel plan here..."
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>

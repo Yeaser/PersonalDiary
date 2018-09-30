@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:backgroundTint="@color/colorPrimary"
+    tools:context="com.example.user.personaldiary.MainActivity">
+
+    <Button
+        android:id="@+id/mNotes"
+        android:layout_width="97dp"
+        android:layout_height="84dp"
+        android:layout_above="@+id/mFriends"
+        android:layout_alignStart="@+id/mFriends"
+        android:layout_marginTop="45dp"
+        android:background="@android:color/background_light"
+        android:onClick="onButtonClick"
+        android:text="NOTES"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+
+    <Button
+        android:id="@+id/mStories"
+        android:layout_width="97dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="51dp"
+        android:background="@android:color/background_light"
+        android:onClick="onButtonClick"
+        android:text="STORIES"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="67dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/mNotes"
+        android:layout_marginStart="26dp" />
+
+    <Button
+        android:id="@+id/mPictures"
+        android:layout_width="97dp"
+        android:layout_height="84dp"
+        android:background="@android:color/background_light"
+        android:onClick="onButtonClick"
+        android:text="PICTURES"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="194dp"
+        android:layout_below="@+id/mFriends"
+        android:layout_alignStart="@+id/mFriends"
+        android:layout_marginTop="17dp" />
+
+    <Button
+        android:id="@+id/mTravel"
+        android:layout_width="97dp"
+        android:layout_height="84dp"
+        android:background="@android:color/background_light"
+        android:onClick="onButtonClick"
+        android:text="TRAVEL"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="194dp"
+
+        android:layout_above="@+id/mPictures"
+        android:layout_alignStart="@+id/mNew" />
+
+    <Button
+        android:id="@+id/mFriends"
+        android:layout_width="97dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="64dp"
+        android:background="@android:color/background_light"
+        android:onClick="onButtonClick"
+        android:text="FRIENDS"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="325dp"
+        android:layout_below="@+id/mStories"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/mNew"
+        android:layout_width="97dp"
+        android:layout_height="84dp"
+        android:background="@android:color/background_light"
+        android:onClick="onButtonClick"
+        android:text="NEW"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="325dp"
+        android:layout_alignTop="@+id/mPictures"
+        android:layout_alignStart="@+id/mStories" />
+</RelativeLayout>

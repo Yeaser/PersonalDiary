@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.personaldiary.LoginActivity">
+
+    <EditText
+        android:id="@+id/loginEmail"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email..."
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="44dp"
+        android:layout_marginTop="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/loginPassword" />
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password..."
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="116dp"
+        android:layout_below="@+id/loginEmail"
+        android:layout_alignStart="@+id/createAccountBtn"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="192dp"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/loginPassword"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/createAccountBtn"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:text="CREATE AN ACCOUNT"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="433dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp" />
+</RelativeLayout>

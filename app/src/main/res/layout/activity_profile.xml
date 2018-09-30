@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.example.user.personaldiary.ProfileActivity">
+
+
+    <ImageView
+        android:id="@+id/Tprofile_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/darker_gray"
+        app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+
+    <TextView
+        android:id="@+id/Tprofile_name"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tprofile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:padding="10dp"
+        android:text="DISPLAY NAME"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Tprofile_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Tprofile_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="13dp"
+        android:padding="6dp"
+        android:text="Status"
+        android:textColor="?attr/colorBackgroundFloating" />
+
+    <TextView
+        android:id="@+id/Tprofile_totalFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Friends"
+        android:textColor="@android:color/background_light"
+        android:layout_marginTop="62dp"
+        android:layout_below="@+id/Tprofile_status"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/Tprofile_send_req_btn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Tprofile_totalFriends"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:background="@color/colorAccent"
+        android:text="SEND FRIEND REQUEST"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Tprofile_decline_req_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:background="@color/colorAccent"
+        android:text="DECLINE FRIEND REQUEST"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:layout_below="@+id/Tprofile_send_req_btn"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

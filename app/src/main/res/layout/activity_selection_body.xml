@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:backgroundTint="@color/colorPrimary"
+    tools:context="com.example.user.personaldiary.SelectionBody">
+
+    <Button
+        android:id="@+id/NotesNewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="26dp"
+        android:background="@android:color/background_light"
+        android:onClick="onButtonClick"
+        android:padding="20dp"
+        android:text="NOTES"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="67dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/StoriesNewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/background_light"
+        android:onClick="onButtonClick"
+        android:padding="20dp"
+        android:text="STORIES"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="67dp"
+        android:layout_below="@+id/NotesNewBtn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/PicturesNewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="31dp"
+        android:background="@android:color/background_light"
+        android:onClick="onButtonClick"
+        android:padding="20dp"
+        android:text="PICTURES"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="194dp"
+        android:layout_below="@+id/TravelNewBtn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/TravelNewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/background_light"
+        android:onClick="onButtonClick"
+        android:padding="20dp"
+        android:text="TRAVEL"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="194dp"
+        android:layout_below="@+id/StoriesNewBtn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/FriendsNewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:background="@android:color/background_light"
+        android:onClick="onButtonClick"
+        android:padding="20dp"
+        android:text="FRIENDS"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="325dp"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/PicturesNewBtn"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
